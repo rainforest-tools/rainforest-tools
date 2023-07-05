@@ -3,7 +3,7 @@
 
 <div>
     03 - Basic Scene
-    <canvas class='webgl w-full h-max'></canvas>
+    <canvas id='webgl-03' class='w-full h-max'></canvas>
 </div>
 
 <script>
@@ -25,7 +25,7 @@
     scene.add(mesh);
 
     // sizes
-    const canvas = document.querySelector('.webgl') ?? undefined;
+    const canvas = document.querySelector('#webgl-03') ?? undefined;
     const sizes = {
         width: canvas?.clientWidth ?? 800,
         height: canvas?.clientWidth ? (canvas?.clientWidth / 800) * 600 : 600,
